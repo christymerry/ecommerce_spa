@@ -1,0 +1,20 @@
+.ad{
+    display:flex ;
+    margin-top: 3rem;
+    gap:3rem;
+    justify-content: center;
+
+}
+.ad2{
+    
+    width:600px;
+    cursor: pointer;
+}
+.ad1{
+    width: 600px;
+    cursor: pointer;
+}
+.ad_text{
+    text-align: center;
+    color: rgb(128, 123, 123)
+}

@@ -1,0 +1,25 @@
+.productimage{
+    width:100%;
+   /* margin-bottom: 2rem; */
+    
+}
+.parentProductImage1{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.parentProductImage1_detail{
+    display: flex;
+    flex-direction: column;
+    width: 23%;
+   
+}
+.product_price{
+    text-decoration: double;
+    margin-left: 2rem;
+    margin-top: 0;
+}
+.parentProductImage2{
+    display: flex;
+    
+}

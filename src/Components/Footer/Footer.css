@@ -1,0 +1,27 @@
+.parentFooter{
+    display: flex;
+    justify-content: center;
+    gap:14rem;
+    background-color:rgb(173, 30, 31);
+    color:white;
+    margin-top: 10rem;
+    padding: 5rem 0;
+}
+.footer_title{
+    cursor: pointer;
+}
+
+.footer_title h2 {
+    font-size: 1.2rem;
+    color:white;
+    text-align: left;
+}
+
+.footer_title p {
+    font-weight: 200;
+    
+}
+
+.footer_title p:hover{
+    color:black
+}

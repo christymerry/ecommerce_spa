@@ -1,0 +1,13 @@
+.account{
+    display: flex;
+    justify-content: center;
+    gap:2rem
+}
+.product{
+    display: flex;
+}
+.cart{
+    display: flex;
+    align-items: flex-start;
+    
+}

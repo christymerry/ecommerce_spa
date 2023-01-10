@@ -1,0 +1,39 @@
+.parentCreateAcountTitle{
+    color:rgb(173, 30, 31);
+    text-align: center;
+
+}
+.parentCreateAcount_desc{
+    color:grey;
+    text-align: center;
+    /* align-items: center; */
+}
+.accountdetails{
+    display: flex;
+    gap:2rem;
+    justify-content: center;
+}
+.createAccountButton{
+   display: flex;
+   justify-content: center;
+   margin:3rem;
+   
+
+}
+.createAccountButtonSubmit{
+    background-color:rgb(173, 30, 31);
+    padding: 1rem;
+    border: none;
+    width: 70rem;
+    color: white;
+    
+
+
+}
+.createAccountButtonSubmit:hover{
+    background-color: white;
+    color:rgb(173, 30, 31)
+
+
+}
+    

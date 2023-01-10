@@ -1,0 +1,14 @@
+.loginHeading{
+    color:rgb(173, 30, 31);
+    
+}
+.parentLogin_heading{
+    color:grey;
+    
+}
+.parentLogin{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+  
+   }

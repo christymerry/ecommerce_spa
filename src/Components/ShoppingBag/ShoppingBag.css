@@ -1,0 +1,24 @@
+.ShoppingCartProductDetials{
+        display: flex;
+        
+        
+}
+
+.productimage_shopping{
+        width:150px;
+        height: 200px;
+}
+.ShoppingCartPrice{
+        margin-left: 0;
+}
+.count{
+        padding: 0.5rem;
+        margin: 20px;
+}
+.shoppingcartCount_Remove:hover{
+        color: brown
+}
+.ParentShoppingBag_heading{
+        margin-left: 2rem;
+
+}
