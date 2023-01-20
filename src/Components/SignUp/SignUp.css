@@ -1,0 +1,12 @@
+.parentSignup h2{
+    color:rgb(173, 30, 31);
+}
+.parentSignup h3{
+    color:grey;
+    
+}
+.parentSignup{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+}

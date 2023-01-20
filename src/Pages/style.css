@@ -1,0 +1,26 @@
+.account{
+    display: flex;
+    justify-content: center;
+    gap:2rem
+}
+.product{
+    display: flex;
+}
+.cart{
+    display: flex;
+    align-items: flex-start;
+    
+}
+@media  (max-width: 1140px){
+    .account{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap:2rem
+    }
+    .cart{
+        display: flex;
+        justify-content: center;
+        
+    }
+}

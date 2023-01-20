@@ -1,0 +1,28 @@
+.icon_button{background-color:rgb(173, 30, 31);
+    padding: 0.5rem;
+    font-family: 'Poppins', sans-serif;
+    width: 15%;
+    border-color: rgb(173, 30, 31);
+    width: 440px;
+    margin-bottom:1rem;
+    color: white;
+    border: none;
+    height: 45px;
+    align-items: center;}
+
+.parentButton{
+    display: flex;
+    align-items: center;
+    margin: 2rem;
+}
+.icon{
+    width: 45px;
+    height:45px;
+    background-color:rgb(124, 18, 18);
+    align-items: center;
+    margin-bottom:1rem;
+    display: flex;
+    justify-content: center;
+    color:white
+}
+

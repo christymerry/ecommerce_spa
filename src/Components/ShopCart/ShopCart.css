@@ -1,0 +1,64 @@
+.ParentShopCart{
+    display: flex;
+    gap:2rem;
+    justify-content: center;
+}
+.cartAddress{
+    
+    margin-left: 1rem
+
+}
+.nextstep{
+    background-color:rgb(173, 30, 31);
+    padding: 1rem;
+    width: 15%;
+    border: solid 0.5px rgb(173, 30, 31);
+    width: 476px;
+    margin-top:1rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+   }
+   .cartaddressnextstep{
+    display: flex;
+    align-items: center;
+    
+   
+   }
+   .nextsteptablet{
+    display: none;
+   }
+   @media  (max-width: 1140px){
+    .ParentShopCart{
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+        justify-content: center;
+    }
+    .cartaddressnextstep{
+        display: none;
+    }
+    .cartAddress{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .nextsteptablet{
+        display: flex;
+        background-color:rgb(173, 30, 31);
+        padding: 1rem;
+        width: 15%;
+        border: solid 0.5px rgb(173, 30, 31);
+        width: 476px;
+        margin-top:1rem;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        justify-content: center;
+       }
+    .cartaddressnextsteptablet{
+        display: flex;
+        justify-content: center;
+       }
+       
+
+   }
