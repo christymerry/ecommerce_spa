@@ -4,7 +4,7 @@ import "./ShoppingBag.css"
 function ShoopingBag() {
   return (
     <div className='ParentShoppingBag'>
-      <h4 className='ParentShoppingBag_heading'>SHOPPING BAG</h4>
+      <h4 className='ParentShoppingBag_heading'>SHOPPING BAG </h4>
       <div className="ShoppingCartProductDetials">
         <div className="ShoppingCartImage">
         <img className="productimage_shopping"
