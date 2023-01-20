@@ -8,8 +8,6 @@ import Cart from './Pages/Cart';
 import CreateAccountPage from './Pages/CreateAccount';
 import { CartProvider } from './cartContext';
 
-
-
 function App() {
   return (
     <div className="App">

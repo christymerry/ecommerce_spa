@@ -33,7 +33,8 @@ function Produts() {
         product_name : product.data().product_name,
         product_images : product.data().images,
         product_price : product.data().product_price,
-        product_slug : product.data().product_slug
+        product_slug : product.data().product_slug,
+        description : product.data().description,
       }
       productsData.push(productDetails);
     });

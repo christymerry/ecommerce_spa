@@ -2,10 +2,12 @@ import React, {useState, useContext} from 'react'
 import Button from '../Button/Button'
 import "./ProductDetails.css";
 import CartContext from '../../cartContext';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function ProductDetails({product}) {
   const {cart} = useContext(CartContext);
-  const {addToCart} = useContext(CartContext);
+  const {addToCart, removeFromCart} = useContext(CartContext);
 
   const [qty, setQty] = useState(1);
 
@@ -24,6 +26,7 @@ function ProductDetails({product}) {
       product_id : product.product_id
     };
     addToCart(productDetails);
+    toast.success("Product Added!");
   }
 
   return (
@@ -45,6 +48,7 @@ function ProductDetails({product}) {
           <p className='product_detail_description'>{product.description}</p>
               <div className="addToBag">
                 <div className="selectOption">
+                {cart.some(e => e.product_id === product.product_id) ? '' :
                   <select name="count" value={qty} className="count_productdetails" onChange={(e) => onQtyChanged(e.target.value)}>
                     <option value={1}>1</option>
                     <option value={2}>2</option>
@@ -52,9 +56,14 @@ function ProductDetails({product}) {
                     <option value={4}>4</option>
                     <option value={5}>5</option>
                   </select>
+                }
                 </div>
                 <div className="button_addtocart">
+                  {cart.some(e => e.product_id === product.product_id) ?
+                  <Button btnType="remove" className="addtobag" buttonName="Remove From Cart" onClick={() => {removeFromCart(product); toast.error('Removed from Cart')}} iconname="fa fa-shopping-bag"/>
+                    :
                   <Button className="addtobag" buttonName="ADD TO BAG" onClick={() => onCartClick(product)} iconname="fa fa-shopping-bag"/>
+                  }
                 </div>
               </div>
               <p className='condition'> <b>Free </b>standard home delivery on orders over £40</p> 
@@ -76,6 +85,7 @@ function ProductDetails({product}) {
           <a href="#" className='socialmediaicon' class="fa fa-google"></a>
         </div>
       </div>
+      <ToastContainer />
     </div>
   )
 }

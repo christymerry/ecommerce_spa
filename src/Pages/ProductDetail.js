@@ -7,7 +7,7 @@ import ProductTab from '../Components/ProductTab/ProductTab'
 
 function ProductDetail() {
   const {state} = useLocation();
-  console.log('State', state);
+  console.log(state)
   return (
     <div>
         <Header/>

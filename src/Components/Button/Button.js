@@ -5,10 +5,7 @@ function Button(props) {
   return (
     <div className='parentButton' >
         <div className='icon'><i class={props.iconname}></i></div>
-        <button type="submit" className='icon_button' onClick={props.onClick}>{props.buttonName}</button>
-
-        
-      
+        <button style={{backgroundColor: props.btnType == "remove" ? 'gray' : 'rgb(124, 18, 18)'}} type="submit" className='icon_button' onClick={props.onClick}>{props.buttonName}</button>
     </div>
   )
 }

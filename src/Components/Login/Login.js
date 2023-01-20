@@ -26,7 +26,6 @@ function Login() {
     const auth = getAuth();
     signInWithEmailAndPassword(auth, email, password)
     .then(()=>{
-      // alert("loggedIn")
       navigate('/');
     })
     .catch((error)=>{
